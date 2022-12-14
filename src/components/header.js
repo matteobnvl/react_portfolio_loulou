@@ -17,7 +17,7 @@ function Header(){
                         </h1>
                     </Link>
                     <div onClick={handeClick} className="menu-toggle cursor-hover-element">
-                        <div class="menu-toggle-inner magnet">
+                        <div className="menu-toggle-inner magnet">
                             <div className={isActive ? 'line top-line active' : 'line top-line'}></div>
                             <div className={isActive ? 'line bottom-line active' : 'line bottom-line'}></div>
                         </div>

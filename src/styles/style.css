@@ -23,7 +23,7 @@ body {
 
 header {
   padding: 40px 50px 0;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -440,4 +440,67 @@ a:after {
   color: black;
   background-color: white;
   transition: all 0.3s;
+}
+
+.text-home {
+  min-height: 400px;
+}
+.text-home p {
+  padding: 50px 0px;
+  width: 70%;
+  font-size: 1.7rem;
+}
+.text-home .image-home {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 999px;
+  float: right;
+}
+.text-home a {
+  font-size: 1.2rem;
+}
+
+.projet {
+  width: 100%;
+  min-height: 200vh;
+  background-color: black;
+  padding-top: 20vh;
+}
+.projet .box-projet {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.projet .box-projet .box {
+  width: 95%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projet .box-projet .box .box-title {
+  width: 20%;
+  height: 100%;
+}
+.projet .box-projet .box .box-title h1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10vh;
+  color: white;
+}
+.projet .box-projet .box .box-image {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.projet .box-projet .box .box-image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
