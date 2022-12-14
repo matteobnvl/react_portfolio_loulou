@@ -11,11 +11,11 @@ function Header(){
 
     return <header>
                 <div className="header-inner">
-                    <a href="/">
+                    <Link to="/">
                         <h1>
                             Bouet <span>Louis</span>
                         </h1>
-                    </a>
+                    </Link>
                     <div onClick={handeClick} className="menu-toggle cursor-hover-element">
                         <div class="menu-toggle-inner magnet">
                             <div className={isActive ? 'line top-line active' : 'line top-line'}></div>
@@ -23,10 +23,10 @@ function Header(){
                         </div>
                     </div>
                     <nav className={isActive ? 'active' :''}>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">À propos</Link>
-                        <Link to="/project">Mes projets</Link>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/" onClick={handeClick}>Home</Link>
+                        <Link to="/about" onClick={handeClick}>À propos</Link>
+                        <Link to="/project" onClick={handeClick}>Mes projets</Link>
+                        <Link to="/contact" onClick={handeClick}>Contact</Link>
                     </nav>
                     <Outlet />
                     <div className={isActive ? 'slide active' : 'slide'}></div>

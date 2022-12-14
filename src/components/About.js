@@ -3,8 +3,28 @@ import School from './about/school'
 
 
 function About(){
+    //(Option Sciences de L'Ingénieur et Numérique et Sciences de l'Informatique)
+    const AllSchool = [
+        ["BIA - Brevet d'Initiation Aéronautique","Lycée Georges Cabanis - Brive-La-Gaillarde (19100)"],
+        ["Baccalauréat Général - Admis Mention assez bien","Lycée Georges Cabanis - Brive-La-Gaillarde (19100)"],
+        ["Bachelor développeur web","Ecole Supérieur du Digital - Bordeaux (33000)"]
+    ]
 
-    
+    let indice = 2
+
+    function handeClick2019(){
+        indice = 0
+    }
+
+    function handeClick2021(){
+        indice = 1
+    }
+
+    function handeClick2024(){
+        indice = 2
+    }
+
+
 
 
     return <main>
@@ -91,19 +111,18 @@ function About(){
                 <h3>Ma formation</h3>
             </div>
             <div className="box-formation">
-                <div className="box magnet">
+                <div onClick={handeClick2019} className="box magnet">
                     <h2>2019</h2>
                 </div>
-                <div className="box magnet">
+                <div onClick={handeClick2021} className="box magnet">
                     <h2>2021</h2>
                 </div>
-                <div className="box magnet">
+                <div onClick={handeClick2024} className="box magnet">
                     <h2>2024</h2>
                 </div>
             </div>
             <div className="info">
-                <School h1="BIA - Brevet d'Initiation Aéronautique" h2="Lycée Georges Cabanis - Brive-La-Gaillarde (19100)" />
-                
+                <School h1={AllSchool[2][0]} h2={AllSchool[2][1]} />
             </div>
         </div>
     </div>
